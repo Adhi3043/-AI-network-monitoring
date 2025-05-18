@@ -1,0 +1,43 @@
+{
+    "target_range": "10.0.2.1-254",
+    "scan_type": "SYN Scan (TCP Ports 1-1024)",
+    "hosts": [
+        {
+            "ip": "10.0.2.15",
+            "state": "up",
+            "protocols": {}
+        },
+        {
+            "ip": "10.0.2.2",
+            "state": "up",
+            "protocols": {
+                "tcp": [
+                    {
+                        "port": 135,
+                        "state": "open"
+                    },
+                    {
+                        "port": 137,
+                        "state": "closed"
+                    },
+                    {
+                        "port": 445,
+                        "state": "open"
+                    }
+                ]
+            }
+        },
+        {
+            "ip": "10.0.2.3",
+            "state": "up",
+            "protocols": {
+                "tcp": [
+                    {
+                        "port": 53,
+                        "state": "open"
+                    }
+                ]
+            }
+        }
+    ]
+}
